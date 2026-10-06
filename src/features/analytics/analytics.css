@@ -1,0 +1,408 @@
+/* src/features/analytics/analytics.css */
+.an-page {
+    --card: #1b1d1c;
+    --field: #262928;
+    --text: #e9ecea;
+    --muted: #8d9591;
+    --accent: #10e49a;
+    --orange: #ff9a3c;
+    --r: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text)
+}
+
+.an-page h1 {
+    margin: 0;
+    font-size: 24px
+}
+
+.an-page h3 {
+    margin: 0 0 2px;
+    font-size: 15px
+}
+
+.an-page p {
+    margin: 0
+}
+
+.an-page small {
+    font-size: 11px
+}
+
+.an-page .small {
+    font-size: 11px
+}
+
+.an-page .muted {
+    color: var(--muted)
+}
+
+.an-page .accent {
+    color: var(--accent)
+}
+
+.an-page .neg {
+    color: #ff6b6b
+}
+
+.an-page .warn {
+    color: var(--orange)
+}
+
+.an-page .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.an-page .row-gap {
+    display: flex;
+    gap: 10px
+}
+
+.an-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap
+}
+
+.an-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.an-month {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-weight: 600;
+    font-size: 13px
+}
+
+.an-seg {
+    display: flex;
+    background: #0f1110;
+    border-radius: 10px;
+    padding: 3px;
+    gap: 2px
+}
+
+.an-seg button {
+    background: none;
+    border: 0;
+    color: var(--text);
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.an-seg.small button {
+    font-size: 10px;
+    padding: 5px 9px
+}
+
+.an-seg .on {
+    background: var(--accent);
+    color: #04251a;
+    font-weight: 700
+}
+
+.an-btn {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    background: var(--field);
+    color: var(--text);
+    border: 0;
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.an-btn.primary {
+    background: var(--accent);
+    color: #04251a
+}
+
+.an-btn.full {
+    width: 100%
+}
+
+.an-card {
+    background: var(--card);
+    border-radius: var(--r);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0
+}
+
+.an-kpis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px
+}
+
+.kpi {
+    font-size: 30px;
+    font-weight: 700
+}
+
+.kpi small {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500
+}
+
+.an-chip {
+    width: 56px;
+    height: 14px;
+    background: var(--accent);
+    border-radius: 4px
+}
+
+.an-tag {
+    background: #0f2a21;
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.split,
+.bar {
+    height: 6px;
+    background: var(--accent);
+    border-radius: 6px;
+    overflow: hidden
+}
+
+.split i {
+    display: block;
+    height: 100%;
+    background: #ff6b6b
+}
+
+.bar {
+    background: var(--field)
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    background: var(--accent)
+}
+
+.bar i.hot {
+    background: var(--orange)
+}
+
+.an-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 16px
+}
+
+.an-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0
+}
+
+.chart {
+    height: 230px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-end;
+    padding: 10px 6px 0
+}
+
+.chart-col {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px
+}
+
+.chart-bar {
+    width: 100%;
+    max-width: 56px;
+    border-radius: 8px 8px 0 0;
+    transition: height .3s
+}
+
+.chart-bar.b0 {
+    background: linear-gradient(#ff9a3c, #c25d0d)
+}
+
+.chart-bar.b1 {
+    background: linear-gradient(#b86a2a, #6b3a14)
+}
+
+.chart-bar.b2 {
+    background: #2c2f2e
+}
+
+.insight {
+    background: linear-gradient(160deg, #145c3f, #0f3d2b)
+}
+
+.insight p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #d6ebe1
+}
+
+.an-ico {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #04251a;
+    display: grid;
+    place-items: center
+}
+
+.an-scroll {
+    overflow-x: auto
+}
+
+.ledger {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px
+}
+
+.ledger th {
+    font-size: 10px;
+    color: var(--muted);
+    text-align: left;
+    padding: 8px 6px;
+    font-weight: 600
+}
+
+.ledger td {
+    padding: 12px 6px;
+    font-size: 13px;
+    vertical-align: middle
+}
+
+.ledger td small {
+    display: block
+}
+
+.ledger tbody tr+tr td {
+    border-top: 1px solid #232726
+}
+
+.donut {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto
+}
+
+.donut svg {
+    width: 100%;
+    height: 100%
+}
+
+.donut-label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.donut-label b {
+    font-size: 22px
+}
+
+.legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.legend li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px
+}
+
+.legend li div {
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.legend i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex: none
+}
+
+.legend .g {
+    background: var(--accent)
+}
+
+.legend .o {
+    background: var(--orange)
+}
+
+.legend .m {
+    background: #6b7370
+}
+
+.hub-preview {
+    height: 90px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0f2a21, #0f1110);
+    display: flex;
+    align-items: flex-end;
+    padding: 10px
+}
+
+@media(max-width:1100px) {
+
+    .an-kpis,
+    .an-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media print {
+
+    .sidebar,
+    .topbar,
+    .an-controls,
+    .hub-preview+.an-btn,
+    .an-btn {
+        display: none !important
+    }
+}
